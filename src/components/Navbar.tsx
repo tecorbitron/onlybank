@@ -44,11 +44,8 @@ const Navbar = () => {
 
   return (
     <nav>
-      <nav
-        className={`left-0 w-full z-50 transition-transform duration-300 ${isScrolledDown ? ' md:bg-white shadow-lg top-0 md:fixed' : 'absolute bg-transparent md:top-10 text-white'
-          } ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className={`left-0 w-full z-50 transition-transform duration-300 ${isScrolledDown ? ' md:bg-white shadow-lg top-0 md:fixed' : 'absolute bg-transparent md:top-10 text-white'} ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div className="max-w-screen-xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
               <Link href="/" className="text-2xl font-bold ">
@@ -72,8 +69,7 @@ const Navbar = () => {
       </nav>
 
       {/* for mobile screen  */}
-
-      {isMenu && <nav className='fixed top-0 z-50 md:hidden h-screen w-full bg-white px-4 sm:px-6 font-semibold '>
+      {isMenu && <nav className='fixed top-0 z-50 md:hidden h-screen w-full bg-white px-4 font-semibold '>
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold ">
