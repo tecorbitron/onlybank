@@ -1,30 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 import bgElement from '@/assets/HeroBG-Element-1.webp'
-import fblogo from '@/assets/logos/fb.svg'
-import inlogo from '@/assets/logos/insta.svg'
-import twlogo from '@/assets/logos/twitterx.svg'
-import { ArrowRight, Mail, Phone } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { Button } from './ui/button'
 
 const HeroSection = () => {
     return (
-        <div className='relative flex flex-col bg-uicore-primary h-screen w-full'>
-
-            {/* small Nav  */}
-            <nav className='hidden md:block py-1 bg-uicore-secondary'>
-                <div className="flex justify-between px-4 max-w-screen-xl m-auto">
-                    <div className="flex items-center gap-5 list-none">
-                        <li><Image src={fblogo} alt='fb icon' height={20} width={20} /></li>
-                        <li><Image src={twlogo} alt='twiter icon' height={18} width={18} /></li>
-                        <li><Image src={inlogo} alt='instagram icon' height={20} width={20} /></li>
-                    </div>
-                    <div className="flex items-center text-white text-sm gap-10">
-                        <p className='flex items-center gap-2'> <Phone size={16} /> 0987654321</p>
-                        <p className='flex items-center gap-2'> <Mail size={16} /> abc@gmail.com</p>
-                    </div>
-                </div>
-            </nav>
+        <section className='relative flex flex-col bg-uicore-primary h-screen w-full'>
 
             {/* Background element  */}
             <Image src={bgElement} alt='' height={400} width={400}
@@ -46,7 +28,7 @@ const HeroSection = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }
 

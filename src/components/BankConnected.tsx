@@ -8,8 +8,8 @@ import { ArrowRight } from 'lucide-react'
 const BankConnected = () => {
     return (
         <section className='relative'>
-            <div className="flex w-full flex-col gap-10 items-center md:flex-row px-4 max-w-screen-xl m-auto">
-                <div className="md:w-1/3 space-y-6 w-fit m-auto z-10">
+            <div className="flex w-full flex-col gap-10 items-end md:flex-row px-4 pt-10 max-w-screen-xl m-auto">
+                <div className="md:w-1/3 space-y-6 w-fit m-auto z-10 py-4">
                     <h3 className='text-3xl md:text-4xl font-medium'>Bank connected spending tracker</h3>
                     <p className='text-uicore-body text-sm'>With many excellent features we are able to help you in dealing with your financial problems</p>
                     <br />
