@@ -18,7 +18,7 @@ const Statistics = () => {
       </div>
 
       <div className="flex w-full flex-col md:flex-row items-center px-4 max-w-screen-xl m-auto">
-        <div className="md:w-1/2 boredr">
+        <div className="md:w-1/2">
           <div className="md:w-11/12 m-auto">
             <h3 className='text-3xl md:text-4xl font-medium'>
               More than 40.000 <span className='text-uicore-body'>people in the world </span>
@@ -42,7 +42,7 @@ const Statistics = () => {
           </div>
         </div>
 
-        <div className="md:w-1/2 boredr">
+        <div className="md:w-1/2">
           <Image src={statisImage} alt='' height={680} width={680} className='m-auto w-full' />
 
         </div>

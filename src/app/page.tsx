@@ -1,5 +1,7 @@
 import Advantages from "@/components/Advantages";
+import BankConnected from "@/components/BankConnected";
 import FinancialNeeds from "@/components/FinancialNeeds";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import OnlybankSupports from "@/components/OnlybankSupports";
@@ -14,6 +16,8 @@ export default function Home() {
       <FinancialNeeds />
       <OnlybankSupports />
       <Advantages />
+      <BankConnected />
+      <Footer />
     </div>
   );
 }
