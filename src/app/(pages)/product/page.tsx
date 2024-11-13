@@ -7,6 +7,7 @@ import productPageImg from '@/assets/PP-Img.png'
 import { ArrowRight } from 'lucide-react'
 import UnlockingFuture from '@/components/UnlockingFuture'
 import WhyChoose from '@/components/WhyChoose'
+import TestimonialScroller from '@/components/AdvantagesSchroller'
 
 const Product = () => {
   return (
@@ -22,21 +23,22 @@ const Product = () => {
 
         {/* Hero Content  */}
         <div className="flex flex-col md:flex-row items-end z-10 px-4 mt-20 relative max-w-screen-xl m-auto">
-          <div className="w-full text-center">
+          <div className="w-full">
             <h1 className='text-3xl md:text-5xl lg:text-6xl text-white leading-tight font-medium mb-8' >Welcome to OnlyBank: Where Your Financial Dreams Take Flight</h1>
-            <p className='text-uicore-accent max-w-screen-md m-auto text-center font-medium md:px-8'>At OnlyBank, we redefine the essence of banking by placing your financial aspirations at the forefront.</p>
-            <Button className='flex w-fit justify-center gap-2 text-lg font-semibold p-6 my-8 md:m-8' >
+            <p className='text-uicore-accent max-w-screen-md m-auto font-medium'>At OnlyBank, we redefine the essence of banking by placing your financial aspirations at the forefront.</p>
+            <Button className='flex w-fit justify-center gap-2 text-lg font-semibold p-6 my-8' >
               Get Started <ArrowRight strokeWidth={3} />
             </Button>
           </div>
 
           <div className="w-full">
-            <Image src={productPageImg} alt='' height={400} width={400} className='lg:pl-10 w-fit h-full object-contain' />
+            <Image src={productPageImg} alt='' height={400} width={400} className='lg:pl-10 w-full h-full object-contain' />
           </div>
         </div>
       </section>
       <UnlockingFuture />
       <WhyChoose />
+      <TestimonialScroller />
       <BankConnected />
     </section>
   )

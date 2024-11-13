@@ -2,6 +2,8 @@ import BankConnected from '@/components/BankConnected'
 import Image from 'next/image'
 import React from 'react'
 import bgElement from '@/assets/HeroBG-Element-1.webp'
+import FAQ from '@/components/FAQ'
+import ContactForm from '@/components/ContactForm'
 
 
 const Contact = () => {
@@ -21,8 +23,8 @@ const Contact = () => {
           <p className='text-uicore-accent max-w-screen-md m-auto text-center font-medium md:px-8'>Get in touch for fast, reliable assistance from our dedicated team of professionals.</p>
         </div>
       </div>
-
-
+      <ContactForm />
+      <FAQ />
       <BankConnected />
     </section >
   )
