@@ -9,6 +9,7 @@ import ContactForm from '@/components/ContactForm'
 const Contact = () => {
   return (
     <section>
+      {/* ContactPage header  */}
       <div className='relative flex flex-col bg-uicore-primary h-[300px] sm:h-[400px] w-full'>
         {/* Background element  */}
         <Image src={bgElement} alt='' height={300} width={300}
@@ -23,6 +24,8 @@ const Contact = () => {
           <p className='text-uicore-accent max-w-screen-md m-auto text-center font-medium md:px-8'>Get in touch for fast, reliable assistance from our dedicated team of professionals.</p>
         </div>
       </div>
+
+      {/* Other components sections of contact page  */}
       <ContactForm />
       <FAQ />
       <BankConnected />

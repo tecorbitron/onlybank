@@ -3,11 +3,13 @@ import Image from 'next/image'
 import React from 'react'
 import bgElement from '@/assets/HeroBG-Element-1.webp'
 import CustomerSupport from '@/components/CustomerSupport'
+import StepSection from '@/components/StepSection'
 
 
 const HowItWorks = () => {
   return (
     <section>
+      {/* How-it-workPage header   */}
       <div className='relative flex flex-col bg-uicore-primary h-[300px] sm:h-[400px] w-full'>
         {/* Background element  */}
         <Image src={bgElement} alt='' height={300} width={300}
@@ -22,7 +24,9 @@ const HowItWorks = () => {
           <p className='text-uicore-accent max-w-screen-md m-auto text-center font-medium md:px-8'>With many excellent features we are able to help you in dealing with your financial problems</p>
         </div>
       </div>
-      
+
+      {/* Other components sections of how-it-work page  */}
+      <StepSection />
       <CustomerSupport />
       <BankConnected />
     </section >

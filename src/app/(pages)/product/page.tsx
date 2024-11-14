@@ -7,13 +7,13 @@ import productPageImg from '@/assets/PP-Img.png'
 import { ArrowRight } from 'lucide-react'
 import UnlockingFuture from '@/components/UnlockingFuture'
 import WhyChoose from '@/components/WhyChoose'
-import TestimonialScroller from '@/components/AdvantagesSchroller'
+import TestimonialScroller from '@/components/TestimonialScroller'
 
 const Product = () => {
   return (
     <section>
-      <section className='relative flex items-end bg-uicore-primary w-full'>
-
+      {/* ProductPage header  */}
+      <div className='relative flex items-end bg-uicore-primary w-full'>
         {/* Background element  */}
         <Image src={bgElement} alt='' height={400} width={400}
           className='absolute top-0 left-0 w-2/5  max-w-[400px]' />
@@ -35,7 +35,9 @@ const Product = () => {
             <Image src={productPageImg} alt='' height={400} width={400} className='lg:pl-10 w-full h-full object-contain' />
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Other components sections of product page  */}
       <UnlockingFuture />
       <WhyChoose />
       <TestimonialScroller />
