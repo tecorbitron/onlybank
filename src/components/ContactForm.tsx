@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 const ContactForm = () => {
     return (
-        <section className='max-w-screen-xl m-auto'>
-            <div className="flex flex-col md:flex-row justify-between items-center py-12 bg-gray-50">
+        <section className='max-w-screen-xl m-auto px-4'>
+            <div className="flex flex-col md:flex-row justify-between items-center py-12 gap-24 bg-gray-50">
                 {/* Map Section */}
                 <div className="w-full md:w-1/2 h-96 mb-6 md:mb-0">
                     <iframe
@@ -73,7 +73,7 @@ const ContactForm = () => {
                     </form>
                 </div>
             </div>
-            <div className="flex flex-col gap-12 md:flex-row py-20">
+            <div className="flex flex-col gap-12 md:flex-row md:py-20">
                 <div className="w-1/3">
                     <span className='flex items-center gap-2'> <MessageCircleMore /> Live Chat: </span>
                     <p className='text-uicore-body mt-2 mb-6'>(239) 555-0108</p>

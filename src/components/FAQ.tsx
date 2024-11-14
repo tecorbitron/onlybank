@@ -44,7 +44,7 @@ const FAQ = () => {
         <div className=" bg-white">
             <div className="flex flex-col items-center py-20 p-6 max-w-screen-xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-medium mb-2 ">Frequently Asked Quetions</h2>
-                <p className="text-uicore-body">Explore the answers to your most pressing questions with our comprehensive FAQ section.</p>
+                <p className="text-uicore-body text-center">Explore the answers to your most pressing questions with our comprehensive FAQ section.</p>
                 <div className="flex flex-col md:flex-row w-full">
                     <div className="w-full mt-16 px-4">
                         <Accordion type="single" collapsible>

@@ -2,6 +2,7 @@ import BankConnected from '@/components/BankConnected'
 import Image from 'next/image'
 import React from 'react'
 import bgElement from '@/assets/HeroBG-Element-1.webp'
+import CustomerSupport from '@/components/CustomerSupport'
 
 
 const HowItWorks = () => {
@@ -21,7 +22,8 @@ const HowItWorks = () => {
           <p className='text-uicore-accent max-w-screen-md m-auto text-center font-medium md:px-8'>With many excellent features we are able to help you in dealing with your financial problems</p>
         </div>
       </div>
-
+      
+      <CustomerSupport />
       <BankConnected />
     </section >
   )
